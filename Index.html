@@ -16,24 +16,22 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><img src="logo.jpg" alt="logo" /></div>
-        <div id="menu" class="menulinks">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="langandsearch">
-          <input
-            type="text"
-            class="search"
-            name="search"
-            placeholder="Search here..."
-          />
-        </div>
-        <span onClick="myFunction()">&#9776;</span>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa fa-bars" id="hamb"></i>
+          <i class="fa fa-close" id="cancel"></i>
+        </label>
+        <img src="logo.jpg" alt="logo" />
+        <ul>
+          <li><a href="index.html" class="menuhover">Home</a></li>
+          <li><a href="aboutus.html" class="menuhover">About</a></li>
+          <li><a href="products.html" class="menuhover">Products</a></li>
+          <li><a href="contact.html" class="menuhover">Contact</a></li>
+        </ul>
       </nav>
     </header>
+
+    <a href="#" class="to-top"><i class="fa fa-chevron-circle-up"></i></a>
 
     <div class="columnhome">
       <p>
@@ -108,13 +106,14 @@
     </div>
 
     <footer>
-      <div class="mainfooterdiv">
-        <div class="footermenu menulinks">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <div class="footermenu">
+        <ul>
+          <li><a href="index.html" class="menuhover">Home</a></li>
+          <li><a href="aboutus.html" class="menuhover">About</a></li>
+          <li><a href="products.html" class="menuhover">Products</a></li>
+          <li><a href="contact.html" class="menuhover">Contact</a></li>
+        </ul>
+
         <div class="app">
           <a href="#"><img src="11233apple.png" alt="apple app image" /></a>
           <a href="#"><img src="11233google.png" alt="google play image" /></a>

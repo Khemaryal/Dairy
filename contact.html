@@ -16,50 +16,46 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><img src="logo.jpg" alt="logo" /></div>
-        <div id="menu" class="menulinks">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="langandsearch">
-          <input
-            type="text"
-            class="search"
-            name="search"
-            placeholder="Search here..."
-          />
-        </div>
-        <span onClick="myFunction()">&#9776;</span>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa fa-bars" id="hamb"></i>
+          <i class="fa fa-close" id="cancel"></i>
+        </label>
+        <img src="logo.jpg" alt="logo" />
+        <ul>
+          <li><a href="index.html" class="menuhover">Home</a></li>
+          <li><a href="aboutus.html" class="menuhover">About</a></li>
+          <li><a href="products.html" class="menuhover">Products</a></li>
+          <li><a href="contact.html" class="menuhover">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
+    <a href="#" class="to-top"><i class="fa fa-chevron-circle-up"></i></a>
+
     <div class="contact">
       <div class="perandadress">
-        <div class="suraj">
+        <div class="suraj personal">
           <img src="suraj.png" alt="Suraj Pandey image" />
           <p>
             Mr. Suraj Pandey<br />
-            Title - Manager <br />Tel - 9846547723<br />
-            e-mail: surajpandey@gmail.com
+            Title - Manager <br />Contact - 9846547723, surajp@gmail.com
           </p>
         </div>
         <br />
-        <div class="dipak">
+        <div class="dipak personal">
           <img src="dipak.png" alt="Dipak Pandey image" />
           <p>
             Mr. Dipak Pandey <br />
-            Title - Sales Manager <br />Tel - 9846547723<br />e-mail:
-            dipak@gmail.com
+            Title - Sales Manager <br />Contact - 9846547723, dipak@gmail.com
           </p>
         </div>
         <br />
-        <div class="shalikram">
+        <div class="shalikram personal">
           <img src="shalikram.png" alt="Shalikram Pandey image" />
           <p>
-            Mr. Shalik Ram Pandey<br />Title - Accountant<br />Tel - 9846547723,
-            e-mail: shalik@gmail.com
+            Mr. Shalik Ram Pandey<br />Title - Accountant<br />Contact -
+            9846547723, shalik@gmail.com
           </p>
         </div>
         <br /><br /><br />
@@ -67,10 +63,10 @@
         <div>
           <address>
             Sales Counter(Dokan):<br />
-            Dharmapath 6, Bardhaghat, 0652 Nawalparasi<br /><br />
+            Bardaghat-04, Nawalparasi<br /><br />
 
             Factory:<br />
-            Santitol 12, Bardhaghat, 0650, Nawalparasi, Nepal<br /><br />
+            Santinagar -06, Nawalparasi<br /><br />
 
             Postal adress:<br />
             Sukrapath 11, P.O. box 03458, Butwal, Nepal.
@@ -79,7 +75,7 @@
       </div>
 
       <div class="form">
-        <form action="" method="">
+        <form>
           <label for="fname">Your Name(Required)</label>
           <input
             type="text"
@@ -135,13 +131,14 @@
     </div>
 
     <footer>
-      <div class="mainfooterdiv">
-        <div class="footermenu menulinks">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <div class="footermenu">
+        <ul>
+          <li><a href="index.html" class="menuhover">Home</a></li>
+          <li><a href="aboutus.html" class="menuhover">About</a></li>
+          <li><a href="products.html" class="menuhover">Products</a></li>
+          <li><a href="contact.html" class="menuhover">Contact</a></li>
+        </ul>
+
         <div class="app">
           <a href="#"><img src="11233apple.png" alt="apple app image" /></a>
           <a href="#"><img src="11233google.png" alt="google play image" /></a>
