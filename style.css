@@ -19,12 +19,15 @@ nav {
 }
 
 .logo {
- 
-  font-size: 35px;
-  font-weight: bold;
-  color: White;
-  margin: 0 100px 0 90px;
+  margin: 0 0 0 50px;
+   }
 
+   .logo img {
+     border-radius: 17px;
+     width: 150px;
+     height: 78px;
+     vertical-align: middle;
+     
    }
 
 a {
@@ -36,12 +39,11 @@ text-decoration: none;
   margin: 8px;
   color: white;
   padding: 7px 10px ;
-  border-radius: 3px;
+  transition: .5s;
 }
 
 .menulinks a:hover {
 background-color: orange;
-transition: .3s;
 border-radius: 7px;
 
 }
@@ -49,7 +51,7 @@ border-radius: 7px;
 .langandsearch {
   align-self: flex-end;
   justify-self: flex-end;
-  width: 250px;
+  width: 200px;
 }
 
 .search {
@@ -111,7 +113,6 @@ span{
     margin: .5rem;
     shape-outside: circle();
   }
-
 
 #products {
 display: flex;
@@ -209,25 +210,28 @@ input, textarea {
   padding: .25rem;
   font-size: 16px;
   border-radius: 5px;
+  outline: none;
   
 }
 
 .btn {
-  display: inline;
-  border: 1px solid white;
-  background: green;
+  display: inline-flex;
+  border: 2px solid orange;
+  background: white;
   padding: 3px;
-  margin: 1.25rem 0;
-  color: black;
+  margin: 1.25rem .5rem 0;
   width: auto;
   text-transform: uppercase;
   cursor: pointer;
-  transition: .3s background ease;
+  transition: .3s ease;
+  outline: none;
 }
 
 .btn:hover {
-  border: 1px solid green;
-  background: orange;
+ border: 2px white solid;
+ background: orange;
+ 
+ 
   
 
 }
@@ -297,7 +301,7 @@ border-radius: 7px;
 
 .copyright {
 text-align: center;
-font-size: 1.3rem;
+
 }
 
 
@@ -305,8 +309,10 @@ font-size: 1.3rem;
 
 @media screen and (max-width: 992px) {
   .logo {
-      margin: 0 50px;
-     }
+      margin: 0 40px;
+             }
+
+
 
 .menulinks a{
        margin: 8px;
@@ -341,11 +347,23 @@ footer {
 
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .logo {
-      font-size: 30px;
-      margin: 0 10px 0 30px;
+    margin: 0  20px;
     }
+
+    .logo img {
+
+      border-radius: 14px;
+      
+    }
+
+    .menulinks a {
+      font-size: 18px;
+      margin-left: 0px;
+      
+    }
+
 
   .app {
       margin-top: 2rem;
@@ -363,10 +381,20 @@ footer {
 }
 
 @media screen and (max-width: 685px) {
-.logo {
-    font-size: 25px;
-    margin: 0 10px 0 25px;
+
+  nav {
+    height: 60px;
   }
+.logo {
+    
+    margin: 0 0 0 10px;
+  }
+
+  .logo img {
+    width: 77%;
+    height: 77%; 
+    border-radius:11px
+        }
 
 .langandsearch {
   display: none;
@@ -375,23 +403,19 @@ footer {
   margin: auto;
 }
 .menulinks a {
-font-size: 18px;
-margin: 7px;
+font-size: 17px;
 }
-  
+
 @media screen and (max-width: 480px) {
 
-.logo {
-  font-size: 30px;
-     margin: 30px
-      }
+
 
 #menu {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   background: yellowgreen;
-  top: 80px;
+  top: 60px;
   text-align: center;
   
 }
@@ -407,4 +431,15 @@ margin: 7px;
  span{
     display: block;
   }
+
+  footer {
+    height: 180px;
+  }
+
+.footermenu {
+  display: none;
+}
+.copyright {
+margin-top: 1rem;
+}
 }
